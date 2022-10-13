@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독립 외부 컨텐츠 iframe 반응형처리하기_유튜브영상</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .inner{
+         max-width:980px;
+         margin: 0 auto;
+        }
+
+        #youtubeContent{
+            height: 0;
+            padding-top: 56%;
+            /* 하이트를 죽이면 너비에 비례해서 56%를 잡는다. 꼭 하이트 죽이기
+                height: 56vw: 과 비슷 외우세요. 100:56  */
+           
+        }
+        #youtubeContent{
+            top:0; left:0; right:0; width:100%; height:100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="inner">
+        <div id="youtubeContent" class="position-relative">
+            <iframe class='position-absolute'  width="100%" src="https://www.youtube.com/watch?v=9GbbFvWoMOk" title="">
+                
+            </iframe>
+       
+            <!--iframe를 유튜브에 딱 붙인다-->
+        </div>
+    </div>
+    
+</body>
+</html>
